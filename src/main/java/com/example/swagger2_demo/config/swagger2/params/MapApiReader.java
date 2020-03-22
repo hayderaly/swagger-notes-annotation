@@ -1,5 +1,6 @@
 package com.example.swagger2_demo.config.swagger2.params;
 
+import com.example.swagger2_demo.config.swagger2.common.SwaggerASMUtil;
 import com.fasterxml.classmate.TypeResolver;
 import com.google.common.base.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

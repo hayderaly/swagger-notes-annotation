@@ -1,7 +1,6 @@
 package com.example.swagger2_demo.config.swagger2.ret;
 
-import com.example.swagger2_demo.config.swagger2.params.SwaggerASMUtil;
-import com.example.swagger2_demo.config.swagger2.params.SwaggerRetMapContext;
+import com.example.swagger2_demo.config.swagger2.common.SwaggerASMUtil;
 import com.fasterxml.classmate.ResolvedType;
 import com.fasterxml.classmate.TypeResolver;
 import com.google.common.base.Optional;
@@ -17,7 +16,6 @@ import springfox.documentation.swagger.common.SwaggerPluginSupport;
 
 import java.util.HashSet;
 import java.util.Map;
-import java.util.Random;
 import java.util.Set;
 
 @Configuration

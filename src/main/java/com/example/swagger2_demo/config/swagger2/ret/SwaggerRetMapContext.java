@@ -1,4 +1,4 @@
-package com.example.swagger2_demo.config.swagger2.params;
+package com.example.swagger2_demo.config.swagger2.ret;
 
 import org.springframework.stereotype.Component;
 
@@ -7,8 +7,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class SwaggerRetMapContext {
-
-    public static final String filterPackage = "com.example";
 
     private static Map<String, Object> map = new ConcurrentHashMap<>();
 

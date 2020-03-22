@@ -1,11 +1,13 @@
-package com.example.swagger2_demo.config.swagger2.params;
+package com.example.swagger2_demo.config.swagger2.common;
 
-import com.alibaba.fastjson.JSONObject;
+import com.example.swagger2_demo.config.swagger2.params.ApiJsonObject;
+import com.example.swagger2_demo.config.swagger2.params.ApiJsonProperty;
+import com.example.swagger2_demo.config.swagger2.params.SwaggerMapContext;
 import com.example.swagger2_demo.config.swagger2.ret.ApiReturnJson;
 import com.example.swagger2_demo.config.swagger2.ret.ApiReturnJsonPro;
+import com.example.swagger2_demo.config.swagger2.ret.SwaggerRetMapContext;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.boot.autoconfigure.AutoConfigurationPackages;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

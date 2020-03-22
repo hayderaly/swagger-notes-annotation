@@ -1,13 +1,15 @@
 package com.example.swagger2_demo.controller;
 
-import com.example.swagger2_demo.bean.User;
 import com.example.swagger2_demo.config.swagger2.params.ApiJsonObject;
 import com.example.swagger2_demo.config.swagger2.params.ApiJsonProperty;
 import com.example.swagger2_demo.config.swagger2.ret.ApiReturnJson;
 import com.example.swagger2_demo.config.swagger2.ret.ApiReturnJsonPro;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
@@ -30,7 +32,7 @@ public class TestController extends BaseController{
             @ApiJsonProperty(type = Integer.class,key = "age", example = "22", description = "user age")
     })
     @ApiReturnJson(name = "ret", value = {
-            @ApiReturnJsonPro(key = "re1", description = "re111",dataType = User.class),
+            @ApiReturnJsonPro(key = "re1", description = "re111"),
             @ApiReturnJsonPro(key = "re2", description = "re222")
     })
     public void test1(@RequestBody Map<String,Object> params){
@@ -47,7 +49,7 @@ public class TestController extends BaseController{
             @ApiJsonProperty(type = Integer.class,key = "age", example = "15", description = "user age")
     })
     @ApiReturnJson(name = "ret", value = {
-            @ApiReturnJsonPro(key = "re1", description = "re111",dataType = User.class),
+            @ApiReturnJsonPro(key = "re1", description = "re111"),
             @ApiReturnJsonPro(key = "re2", description = "re222")
     })
     public void test2(@RequestBody Map<String,Object> params){

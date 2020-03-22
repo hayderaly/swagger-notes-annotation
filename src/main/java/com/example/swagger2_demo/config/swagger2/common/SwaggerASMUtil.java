@@ -1,5 +1,6 @@
-package com.example.swagger2_demo.config.swagger2.params;
+package com.example.swagger2_demo.config.swagger2.common;
 
+import com.example.swagger2_demo.config.swagger2.params.ApiJsonProperty;
 import com.example.swagger2_demo.config.swagger2.ret.ApiReturnJsonPro;
 import jdk.internal.org.objectweb.asm.*;
 import org.apache.commons.lang3.StringUtils;
@@ -21,7 +22,7 @@ public class SwaggerASMUtil implements Opcodes {
         methodVisitor.visitEnd();
     }
 
-    private static void doParseFieldAndMethod(ClassWriter cw, ApiJsonProperty[] propertys,String className){
+    private static void doParseFieldAndMethod(ClassWriter cw, ApiJsonProperty[] propertys, String className){
         for (ApiJsonProperty property : propertys) {
 
             String typeof = "";
